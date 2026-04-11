@@ -29,12 +29,6 @@ namespace POO_1
 
                 DateTime saida = horaSaida ?? DateTime.Now;
                 decimal total = veiculo.CalcularCobranca(saida);
-               
-                Console.WriteLine("========== TICKET DE SAÍDA ==========");
-                veiculo.ExibirInfo();
-                Console.WriteLine($"  Saída  : {saida:dd/MM/yyyy HH:mm:ss}");
-                Console.WriteLine($"  Total  : R$ {total:F2}");
-                Console.WriteLine("======================================");
                 _veiculos.Remove(veiculo);
         }
         
